@@ -11,6 +11,9 @@
 		E2B4E5442C675F89003EDD03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B4E5432C675F89003EDD03 /* ContentView.swift */; };
 		E2B4E5462C675F8B003EDD03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B4E5452C675F8B003EDD03 /* Assets.xcassets */; };
 		E2B4E5492C675F8B003EDD03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B4E5482C675F8B003EDD03 /* Preview Assets.xcassets */; };
+		E2B4E5512C6C3E8D003EDD03 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B4E5502C6C3E8D003EDD03 /* Home.swift */; };
+		E2B4E5552C6C3FF8003EDD03 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B4E5542C6C3FF8003EDD03 /* Extension.swift */; };
+		E2B4E5572C6CE9D2003EDD03 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B4E5562C6CE9D2003EDD03 /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		E2B4E5432C675F89003EDD03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E2B4E5452C675F8B003EDD03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2B4E5482C675F8B003EDD03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2B4E5502C6C3E8D003EDD03 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E2B4E5542C6C3FF8003EDD03 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		E2B4E5562C6CE9D2003EDD03 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,8 @@
 		E2B4E5402C675F89003EDD03 /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				E2B4E5522C6C3F16003EDD03 /* UIComponents */,
+				E2B4E54F2C6C3E3B003EDD03 /* UIView */,
 				E2B4E5412C675F89003EDD03 /* QuizAppApp.swift */,
 				E2B4E5432C675F89003EDD03 /* ContentView.swift */,
 				E2B4E5452C675F8B003EDD03 /* Assets.xcassets */,
@@ -65,6 +73,31 @@
 				E2B4E5482C675F8B003EDD03 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E2B4E54F2C6C3E3B003EDD03 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				E2B4E5502C6C3E8D003EDD03 /* Home.swift */,
+				E2B4E5562C6CE9D2003EDD03 /* Quiz.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		E2B4E5522C6C3F16003EDD03 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				E2B4E5532C6C3FC8003EDD03 /* Extension */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		E2B4E5532C6C3FC8003EDD03 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E2B4E5542C6C3FF8003EDD03 /* Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B4E5442C675F89003EDD03 /* ContentView.swift in Sources */,
+				E2B4E5572C6CE9D2003EDD03 /* Quiz.swift in Sources */,
+				E2B4E5512C6C3E8D003EDD03 /* Home.swift in Sources */,
 				E2B4E5422C675F89003EDD03 /* QuizAppApp.swift in Sources */,
+				E2B4E5552C6C3FF8003EDD03 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
