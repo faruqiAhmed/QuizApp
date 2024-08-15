@@ -7,6 +7,8 @@
 
 import SwiftUI
 struct Home: View {
+    @State var isPresent = false
+    @State var showingPopup = false
     var body: some View {
         ZStack {
             Color.bg
@@ -57,10 +59,14 @@ struct Home: View {
                 .frame(maxWidth: .infinity , maxHeight: .infinity, alignment: .bottom)
               //  .padding()
             VStack {
-                Button {
-                    
+              
+                Button  {
+                    self.isPresent.toggle()
+                     
                  //   viewModel.signInWithEmail()
-                } label: {
+                }
+              
+            label: {
                     Text("Play Quiz Now")
                         .bold()
                         .foregroundStyle(.white)
@@ -71,6 +77,13 @@ struct Home: View {
                                 .fill(Color("ButtonColor"))
                         }
                 }
+                
+                
+                .fullScreenCover(isPresented: $isPresent, content: {
+                   QuizView(quizViewModel: QuizViewModel())
+                //    StartDialog()
+                    
+                })
                 .padding()
             }
         }
